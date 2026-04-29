@@ -353,8 +353,8 @@
 
         /* Country adoption chart */
         .adoption-chart { display: flex; flex-direction: column; gap: 0.6rem; }
-        .adoption-row { display: grid; grid-template-columns: 90px 1fr 40px; align-items: center; gap: 0.75rem; }
-        .adoption-country { font-size: 0.82rem; color: var(--text-muted); text-align: right; }
+        .adoption-row { display: grid; grid-template-columns: 112px 1fr 40px; align-items: center; gap: 0.75rem; }
+        .adoption-country { font-size: 0.82rem; color: var(--text-muted); text-align: right; white-space: nowrap; }
         .adoption-bar-track { background: rgba(255,255,255,0.05); border-radius: 3px; height: 18px; overflow: hidden; }
         .adoption-bar { height: 100%; border-radius: 3px; width: 0%; transition: width 1.2s cubic-bezier(0.4,0,0.2,1); }
         .adoption-bar.high { background: linear-gradient(90deg, #22c55e, #4ade80); }
@@ -486,7 +486,7 @@
     <h1>From Chatbots to <em>Confidants</em></h1>
     <p class="hero-sub">A large-scale survey of 4,641 people across seven countries reveals (1) who adopts <strong>AI for emotional support</strong>, (2) why they prefer to use AI for this purpose, and (3) what are the main use cases of AI as a digital confidant.</p>
     <div class="hero-actions">
-        <a href="#" class="btn-primary">📄 Read the Paper</a>
+        <a href="https://arxiv.org/abs/2604.25525" class="btn-primary" target="_blank" rel="noopener noreferrer">📄 Read the Paper</a>
         <a href="#results" class="btn-secondary">↓ Explore Results</a>
     </div>
     <div class="stat-strip">
@@ -703,7 +703,7 @@
             <h3>Who is most likely to use AI for emotional support?</h3>
             <p class="chart-caption">To understand how wealth, age, and lifestyle shape AI adoption, we used a <strong>Cumulative Link Mixed Model (CLMM)</strong>. By treating demographics as fixed effects and country as a random effect, the chart below shows which personal traits significantly (p < .05) increase or decrease a person's AI <strong>Usage Intention</strong>, independent of their cultural background.
 <br><br>
-                <em>*Note: We also modeled the impact of demographics on <strong>Trust</strong> and <strong>Perceived Benefits</strong>. See the full paper for complete results.</em>
+                <em>*Note: We also modeled the impact of demographics on <strong>Trust</strong> and <strong>Perceived Benefits</strong>. See the full paper for complete results. Reference categories for this model are SES: 7, Religion: Christianity, Age: 25–34, and Marital Status: Married/Partnered.</em>
 </p>
             <div style="background: rgba(255,255,255,0.03); border-left: 2px solid var(--gold); padding: 0.8rem 1rem; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--text); border-radius: 4px; line-height: 1.6;">
                 Users with higher socioeconomic status (SES) are the most open to adopt AI confidants. Older adults, individuals who are single, and non-religious people are less likely to turn to AI for emotional support.
